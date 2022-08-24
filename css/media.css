@@ -1,0 +1,57 @@
+
+  
+  
+  
+  @media (max-width: 426px){
+    .container {
+        width: 406px;
+        
+    }
+    .add_btn,
+    .add_btn_modal,
+    .edit_btn_modal{ 
+        
+        font-family: arial;
+        display: inline-block;
+        text-align: center;
+        font-size: 25px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #b9fa64;
+        
+        border: 2px solid #2B7A0B;
+
+    }
+    .btn{
+        
+        font-size: 18px;
+  
+       
+    }
+    .contact_book_item {
+        font-size: 20px;
+      
+    }
+  }
+  
+  @media(max-width: 401px){
+
+  
+  }
+  
+  @media(max-width: 376px){
+    .container {
+        width:350px;
+        
+    }
+  }
+  @media(max-width: 321px){
+    .container {
+        width: 300px;
+        
+    }
+    .contacts_info {
+        font-size: 19px;
+      
+    }
+  }

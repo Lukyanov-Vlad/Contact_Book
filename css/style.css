@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 480px;
+    margin: 0 auto;
+}
+.main_wrapper{
+    border: 3px solid #2B7A0B;
+    border-radius: 7px;
+}
+.header {
+    padding: 15px;
+    background-color: rgb(251, 251, 98);
+    border-bottom: 3px solid #2B7A0B;
+    border-radius: 3.5px 3.5px 0 0;
+    
+}
+.header_title {
+    text-align: center;
+    font-size: 26px !important;
+    font-family:arial;
+   
+}
+.main {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ceefa2;
+    border-radius: 0 0 3.5px 3.5px ;
+}
+.contact_book_items {
+   
+    list-style: none;
+    padding: 15px;
+}
+.contact_book_item {
+   
+    margin-bottom: 15px;
+}
+
+.contacts_info{
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.btn{
+    font-family: arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 7px;
+    border-radius: 7px;
+    background-color: #b9fa64;
+    color: #2B7A0B;
+    border: 2px solid #2B7A0B;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.4);
+}
+.modal_container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_field_title{
+    font-family: arial;
+    font-size: 22px;
+    background-color: #b9fa64;
+    padding: 15px;
+    text-align: center;
+    color: #2B7A0B;
+}
+
+.main_field {
+    
+    background-color: #fff;
+    width: 500px;
+}
+.header_title,
+.contacts_info,
+.add_btn,
+.add_btn_modal,
+.edit_btn_modal,
+.info_label{
+    font-family: arial;
+    font-size: 20px;
+    color: #2B7A0B;
+    font-weight: bold;
+}
+
+.info_label{
+    font-family: arial;
+    display: flex;
+    margin-bottom: 5px;
+    
+   
+}
+
+
+
+.main_field_info{
+    padding: 15px;
+    display: flex;
+    flex-direction: column; 
+    padding-left: 20px;
+    background-color: #cff59d;
+}
+.main_field_info input{
+    margin-bottom: 10px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_btn,
+.add_btn_modal,
+.edit_btn_modal{ 
+    
+   
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #b9fa64;
+    
+    border: 2px solid #2B7A0B;
+
+}
+
+.add_btn:hover,
+.btn:hover,
+.add_btn_modal:hover,
+.edit_btn_modal:hover{
+    cursor: pointer;
+    box-shadow: 0 0 7px yellow;
+}
