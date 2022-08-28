@@ -41,10 +41,10 @@ class Contacts{
         
         
     }
-    add(name,email,addres,phone){
+    add({name,email,addres,phone}){
        
         let newUser=new User({
-            id: `${performance.now()}`,
+            id: `${Math.round(performance.now())}`,
             name: name,
             email: email,
             addres: addres,
@@ -189,9 +189,14 @@ class ContactsApp extends Contacts{
             }
         }
     }
+    calcTime(date) {
+        let newDate=new Date(date.getTime()+(3600000)*3);
+        return newDate;
+    }
     workWithCookies(){
-        let date=new Date(Date.now());
-       
+        let oldDate=new Date(Date.now());
+         let date=this.calcTime(oldDate);
+        console.log('this'+date.getTimezoneOffset());
         document.cookie='storageExpiration='+date.toUTCString()+';max-age=864000';
     }
     show(){
@@ -286,7 +291,7 @@ class ContactsApp extends Contacts{
                     let addres=inputs[2].value;
                     let phone=inputs[3].value;
                     if(this.Verification(name) && this.VerificationEmail(email) && this.Verification(addres) &&  this.VerificationPhone(phone)){
-                        this.add(name,email,addres,phone); 
+                        this.add({name,email,addres,phone}); 
                         this.storage=this.data;
                         
                         this.show();
