@@ -369,8 +369,8 @@ class ContactsApp extends Contacts{
         return testArray;
     }
     set storage(newData){
-        let jsonNewData=JSON.stringify(newData);
-        localStorage.setItem('localStorageData',jsonNewData);
+       
+        localStorage.setItem('localStorageData',JSON.stringify(newData));
         this.workWithCookies();
     }
 }
